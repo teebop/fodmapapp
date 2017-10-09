@@ -13,6 +13,7 @@
 		D1A8B7471F6FF47100EA3525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A8B7451F6FF47100EA3525 /* Main.storyboard */; };
 		D1A8B7491F6FF47100EA3525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A8B7481F6FF47100EA3525 /* Assets.xcassets */; };
 		D1A8B74C1F6FF47100EA3525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A8B74A1F6FF47100EA3525 /* LaunchScreen.storyboard */; };
+		D1A8B7541F86B8E400EA3525 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A8B7531F86B8E400EA3525 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D1A8B7481F6FF47100EA3525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1A8B74B1F6FF47100EA3525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1A8B74D1F6FF47100EA3525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1A8B7531F86B8E400EA3525 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D1A8B73F1F6FF47100EA3525 /* AppDelegate.swift */,
 				D1A8B7411F6FF47100EA3525 /* FirstViewController.swift */,
 				D1A8B7431F6FF47100EA3525 /* SecondViewController.swift */,
+				D1A8B7531F86B8E400EA3525 /* ThirdViewController.swift */,
 				D1A8B7451F6FF47100EA3525 /* Main.storyboard */,
 				D1A8B7481F6FF47100EA3525 /* Assets.xcassets */,
 				D1A8B74A1F6FF47100EA3525 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				D1A8B7441F6FF47100EA3525 /* SecondViewController.swift in Sources */,
 				D1A8B7401F6FF47100EA3525 /* AppDelegate.swift in Sources */,
+				D1A8B7541F86B8E400EA3525 /* ThirdViewController.swift in Sources */,
 				D1A8B7421F6FF47100EA3525 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = msc.fodmapapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -298,7 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = msc.fodmapapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
