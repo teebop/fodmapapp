@@ -23,43 +23,59 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RUQ-Og-3Pr">
-                                <rect key="frame" x="20" y="96" width="374" height="123"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hrb-Vi-mqh">
+                                <rect key="frame" x="20" y="96" width="374" height="54"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="54" placeholderIntrinsicHeight="54" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="7nq-S8-Zoc">
-                                        <rect key="frame" x="0.0" y="34.666666666666657" width="54" height="54"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="7nq-S8-Zoc" secondAttribute="height" multiplier="1:1" id="cR3-b9-wzx"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUM-95-qU6">
-                                        <rect key="frame" x="54" y="51.333333333333343" width="320" height="20.333333333333314"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RUQ-Og-3Pr">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="54"/>
+                                        <subviews>
+                                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="54" placeholderIntrinsicHeight="54" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="7nq-S8-Zoc">
+                                                <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="7nq-S8-Zoc" secondAttribute="height" multiplier="1:1" id="7W4-op-SUw"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="s79-Rj-dWg" appends="YES" id="9AX-JI-y1g"/>
+                                                </connections>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUM-95-qU6">
+                                                <rect key="frame" x="54" y="17" width="320" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RUQ-Og-3Pr" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="2c6-HP-40O"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="RUQ-Og-3Pr" secondAttribute="bottom" constant="468" id="4u2-Nu-yzB"/>
-                            <constraint firstItem="RUQ-Og-3Pr" firstAttribute="centerX" secondItem="SWq-T9-AYr" secondAttribute="centerX" id="AjT-Cs-NEF"/>
-                            <constraint firstItem="SWq-T9-AYr" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="E7w-mc-kNN"/>
-                            <constraint firstItem="RUQ-Og-3Pr" firstAttribute="top" secondItem="SWq-T9-AYr" secondAttribute="bottom" constant="20" id="FsG-BG-jKq"/>
-                            <constraint firstItem="SWq-T9-AYr" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="NWk-QK-9f3"/>
-                            <constraint firstItem="SWq-T9-AYr" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="WqH-V9-pGt"/>
+                            <constraint firstAttribute="trailing" secondItem="SWq-T9-AYr" secondAttribute="trailing" id="9OB-O8-NLB"/>
+                            <constraint firstItem="SWq-T9-AYr" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="F8d-5I-hES"/>
+                            <constraint firstItem="SWq-T9-AYr" firstAttribute="centerX" secondItem="Hrb-Vi-mqh" secondAttribute="centerX" id="GSa-wE-YKD"/>
+                            <constraint firstItem="SWq-T9-AYr" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="Qr0-g4-LBe"/>
+                            <constraint firstItem="Hrb-Vi-mqh" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="cgE-lY-GHf"/>
+                            <constraint firstItem="Hrb-Vi-mqh" firstAttribute="top" secondItem="SWq-T9-AYr" secondAttribute="bottom" constant="20" id="n6A-gZ-Kq8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="foodImageView" destination="7nq-S8-Zoc" id="br9-YZ-T9U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="s79-Rj-dWg">
+                    <connections>
+                        <action selector="selectImage:" destination="9pv-A4-QxB" id="iRl-18-bLt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="781.60000000000002" y="-322.48875562218893"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Settings-->
         <scene sceneID="Q4C-qN-lPH">
             <objects>
                 <viewController id="uzI-gN-r1B" customClass="ThirdViewController" customModule="fodmapapp" customModuleProvider="target" sceneMemberID="viewController">
@@ -91,6 +107,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZR-JI-mTh">
                                         <rect key="frame" x="0.0" y="50.333333333333329" width="34" height="30"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="nameSaveButton:" destination="uzI-gN-r1B" eventType="touchUpInside" id="yHl-eU-pd0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -109,17 +128,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Bt-Uc-Bph"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="6f1-77-kTk"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settingsCog" id="6f1-77-kTk"/>
                     <connections>
-                        <outlet property="nameLabel" destination="Efa-x4-Joa" id="0KF-rk-Iqc"/>
-                        <outlet property="nameTextField" destination="kZk-uL-esl" id="gn2-1z-aCY"/>
+                        <outlet property="nameLabel" destination="Efa-x4-Joa" id="LGZ-kg-aqf"/>
+                        <outlet property="nameTextField" destination="kZk-uL-esl" id="Sbl-KF-Qba"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VB9-PB-SgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="782" y="384"/>
         </scene>
-        <!--Second View Controller-->
+        <!--About-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="fodmapapp" customModuleProvider="target" sceneMemberID="viewController">
@@ -150,7 +169,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="About" image="aboutIcon" landscapeImage="aboutIcon" selectedImage="aboutIcon" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,6 +196,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="aboutIcon" width="32" height="32"/>
+        <image name="food" width="27" height="32"/>
+        <image name="settingsCog" width="32" height="32"/>
     </resources>
 </document>

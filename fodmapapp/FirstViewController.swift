@@ -9,7 +9,10 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    @IBAction func selectImage(_ sender: Any) {
+    }
+    @IBOutlet weak var foodImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
